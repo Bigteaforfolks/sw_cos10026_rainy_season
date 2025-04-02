@@ -1,0 +1,20 @@
+Author: Jacob Ang
+Created: 02/04/2025
+Last Modified: 02/04/2025
+
+head
+
+
+body
+- Top Bar
+    - Title: Rainy Season
+    - Graphic (relating to company w/ name and logo): *worked on later* Placeholder image
+    - Navigation menu (same on all pages)
+        - Email link to "info@rainyseason.com.au"
+- Main Body
+    - Description Header: *AI* Rainy Season is Hiring!
+    - Description: *AI* At Rainy Season, we believe in nurturing talent and innovation. Explore our latest job openings and find the perfect opportunity to grow with us. Each position comes with a detailed description outlining the qualifications, skills, and knowledge required. Ready to join our dynamic team? Submit your application online today and take the next step in your career journey!
+
+
+footer
+- link to jira (https://rainy-season.atlassian.net/)
