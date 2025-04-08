@@ -1,0 +1,49 @@
+Author: Oakley Tang
+Created: 08/04/2025
+Last modified: 08/04/2025
+
+head
+Available jobs at Rainy Season
+
+body
+    Position 1: Cybersecurity Specialist
+    Reference number: RX7FD
+    Salary range: $150,000 to $180,000 
+    Description: 
+        Protect Rainy Season’s network infrastructure and data by designing and implementing robust security systems. Role involves assessing the cybersecurity of the company and proposing and installing improvements. Collaborate with other teams across the company and give vital advice on cybersecurity measures. 
+    Title to whom you report: 
+        Chief Information Security Officer (CISO) 
+    Key responsibilities, in order of priority:     *this is an ordered list*
+        1. Design, install, and maintain cybersecurity systems
+        2. Discuss and implement security measures in collaboration with various IT teams in the company
+        3. Monitor security warnings and alerts and respond to security threats
+    Essential skills and traits:        *this is an unordered list*
+        - Minimum 2 years of experience working with cybersecurity measures such as firewalls
+        - Rich knowledge of and familiarity with security controls
+        - Strong problem-solving skills
+    Preferable skills and traits:       *this is an unordered list*
+        - Good communication skills and willingness to work with other people in a social and team setting
+        - Certification such as CISSP, CEH, or CISM
+        - Familiarity with Python
+
+    *The second description was AI generated with the prompt: "[pasted the above description] Write a similar job description as the one above (using the same subheadings) for Position 2: Software Developer", then edited to match the style of the original description (which was written manually)."
+
+    Position 2: Software Developer
+    Reference number: SIGC8
+    Salary range: $120,000 to $150,000
+    Description: 
+        Develop and maintain high-quality software solutions for Rainy Season. Role involves designing, coding, testing, and optimizing software applications to meet business needs. Collaborate with other teams to ensure seamless integration of software solutions and contribute to the overall technical growth of the company.
+    Title to whom you report: 
+        Lead Software Engineer
+    Key responsibilities, in order of priority:         *this is an ordered list*
+        1. Develop, test, and maintain software applications to support company operations
+        2. Identify and resolve software defects and performance issues
+        3. Work closely with other teams to integrate software solutions with existing systems
+    Essential skills and traits:        *this is an unordered list*
+        - Minimum 3 years of experience in software development
+        - Strong knowledge of programming languages such as Python, Java, or C++
+        - Strong problem-solving skills
+    Preferable skills and traits:       *this is an unordered list*
+        - Good communication skills and willingness to work with other people in a social and team setting
+        - Experience with cloud computing platforms such as AWS or Azure
+        - Familiarity with Agile development methodologies
