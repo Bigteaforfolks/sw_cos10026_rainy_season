@@ -1,0 +1,38 @@
+Author: Oakley Tang
+Created: 09/04/2025
+Last modified: 09/04/2025
+
+About
+    - Group name: Rainy Season
+        - Class time: Friday, 2:30 pm
+    - Student IDs:
+        - 105914449 (Jacob)
+        - 105928408 (Oakley)
+    - Tutor: Razeen Hashmi
+
+Members contribution
+Jacob: 
+    - Main page
+    - Apply page
+    - CSS style file
+    - Code comment checking
+    - Jira project management
+
+Oakley: 
+    - Jobs page
+    - About page
+    - CSS style file
+    - Accessibility checking
+    - Jira project management
+
+Group photo
+
+Members interests
+    Jacob
+        - J-rock music
+        - Cars and motorsport
+        - Counter-Strike
+    Oakley
+        - J-rock music
+        - Cars and motorsport
+        - Need for Speed

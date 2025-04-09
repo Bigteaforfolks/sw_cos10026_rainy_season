@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="About page of Rainy Season website">
+    <meta name="keywords" content="Rainy Season, About, Information, Team, Group, Info">
+    <meta name="author" content="Oakley Tang">
+    <title>About the Rainy Season team</title>
+</head>
+
+<!-- Reference to external CSS file -->
+<link href="styles/rainyseason.css" rel="stylesheet">
+
+<body>
+    <header>
+        <img id="logo" src="images/logo.png" alt="Rainy Season Logo">
+        <h1 id="title">Rainy Season</h1>
+            
+        <!-- Navigation menu -->
+        <nav>
+            <ul>
+                <li class="menu"><a href="index.html" title="This takes you to the Home page.">Home</a></li>
+                <li class="menu"><a href="jobs.html" title="This takes you to the Position Descriptions page.">Jobs</a></li>
+                <li class="menu"><a href="apply.html" title="This takes you to the Job Applications page.">Apply</a></li>
+                <li class="menu"><a href="about.html" title="This takes you to the About Us page.">About</a></li>
+                <li class="menu"><a href="mailto:info@rainyseason.com.au" title="Allows you to contact our email.">Email</a></li>
+            </ul>
+        </nav>
+    </header>
+        
+    <section id="heading">
+        <h2>About Us</h2>
+    </section>
+    
+    <!-- team basic information section -->
+    <section id="team_basic_info">
+        <h3>Team Basic Information</h3>
+        <ul>
+            <li>Group name: Rainy Season</li>
+            <li>Class time: Friday, 2:30 pm</li>
+            <li>Student IDs
+                <ul>
+                    <li>105914449 (Jacob)</li>
+                    <li>105928408 (Oakley)</li>
+                </ul>
+            </li>
+            <li>Tutor: Razeen Hashmi</li>
+        </ul>
+    </section>
+
+    <!-- Member contribition section -->
+    <section id="member_contribution">
+        <h3>Contribution by group members</h3>
+        
+        <!-- Definition list to tie member and contribution together -->
+        <dl>
+            <div class="jacob_contribution">
+                <dt>Jacob</dt>
+                <dd>
+                    <ul>
+                        <li>Main page</li>
+                        <li>Apply page</li>
+                        <li>CSS style file</li>
+                        <li>Code comment checking</li>
+                        <li>Jira project management</li>
+                    </ul>
+                </dd>
+            </div>
+
+            <div class="oakley_contribution">
+                <dt>Oakley</dt>
+                <dd>
+                    <ul>
+                        <li>Jobs page</li>
+                        <li>About page</li>
+                        <li>CSS style file</li>
+                        <li>Accessibility checking</li>
+                        <li>Jira project management</li>
+                    </ul>
+                </dd>   
+            </div>     
+        </dl>
+    </section>
+
+    <section id="team_photo">
+        <p>Rainy Season Team</p>
+        <img id="team_photo"
+        src="images/team_photo"
+        alt="Rainy Season Team">
+    </section>
+    
+    <!-- Member interests section -->
+    <section id="interests">
+        <table>
+            <caption>Interests of Rainy Season team members</caption>
+            <thead>
+               <tr>
+                    <th></th>
+                    <th colspan="2" scope="col">Person</th>
+                </tr>
+                <tr>
+                    <th></th>
+                    <th scope="col">Jacob</th>
+                    <th scope="col">Oakley</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">Interest 1</th>
+                    
+                    <!-- Merged cell for shared interest -->
+                    <td colspan="2">J-rock music</td>
+                </tr>
+                <tr>
+                    <th scope="row">Interest 2</th>
+                    
+                    <!-- Merged cell for shared interest -->
+                    <td colspan="2">Cars and motorsport</td>
+                </tr>
+                <tr>
+                    <th scope="row">Interest 3</th>
+                    <td>Counter-Strike</td>
+                    <td>Need for Speed</td>
+                </tr>
+            </tbody>
+        </table>        
+    </section>
+</body>
+</html>
