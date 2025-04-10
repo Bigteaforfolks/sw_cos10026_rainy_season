@@ -47,13 +47,13 @@
                     <!-- First Name (Textbox) -->
                     <div id="div_first_name">
                         <label for="first_name">First Name</label><br>
-                        <input type="text" name="first_name" id="first_name" pattern="^[a-zA-Z]{1,20}$">
+                        <input type="text" name="first_name" id="first_name" pattern="^[a-zA-Z]{1,20}$" required>
                     </div>
 
                     <!-- Last Name (Textbox) -->
                     <div id="div_last_name">
                         <label for="last_name">Last Name</label><br>
-                        <input type="text" name="last_name" id="last_name" pattern="^[a-zA-Z]{1,20}$"><br><br>
+                        <input type="text" name="last_name" id="last_name" pattern="^[a-zA-Z]{1,20}$" required><br><br>
                     </div>
 
                 </div>
@@ -63,13 +63,13 @@
                     <!-- Email Address (Textbox) -->
                     <div id="div_email_address">
                         <label for="email_address">Email Address</label><br>
-                        <input type="text" name="email_address" id="email_address" pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$"><br> <!-- RegEx sourced from https://regexr.com/3e48o -->
+                        <input type="text" name="email_address" id="email_address" pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$" required><br> <!-- RegEx sourced from https://regexr.com/3e48o -->
                     </div>
                     
                     <!-- Phone Number (Textbox) -->
                     <div id="div_phone_number">
                         <label for="phone_number">Phone Number</label><br>
-                        <input type="text" name="phone_number" id="phone_number" pattern="^[\d ]{8,12}$"><br><br>
+                        <input type="text" name="phone_number" id="phone_number" pattern="^[\d ]{8,12}$" required><br><br>
                     </div>
 
                 </div>
@@ -89,7 +89,7 @@
                         <label for="male">Male</label><br>
                         <input type="radio" name="gender" id="female">
                         <label for="female">Female</label><br>
-                        <input type="radio" name="gender" id="other" checked>      
+                        <input type="radio" name="gender" id="other" checked required>      
                         <label for="other">Other</label><br>  
                     </div>
 
@@ -104,7 +104,7 @@
                     <label for="job_reference_number">Job Reference Number</label><br>
                     <select name="job_reference_number" id="job_reference_number" required>
                         <!-- "" is selected by default but cannot be used as a valid selection -->
-                        <option value="" disabled selected>Please Select a Reference Number</option>
+                        <option value="" disabled selected required>Please Select a Reference Number</option>
                         <option value="RX7FD">RX7FD - Cybersecurity Specialist</option>
                         <option value="SIGC8">SIGC8 - Software Developer</option>
                     </select><br><br>
@@ -117,7 +117,7 @@
                     <div id="div_required_technical_list">
                         <label >Required Technical List</label><br>
                         <label for=""></label>
-                        <input type="checkbox" name="" id=""><br>
+                        <input type="checkbox" name="" id="" required><br>
                         <label for=""></label>
                         <input type="checkbox" name="" id=""><br>
                         <label for=""></label>
@@ -143,13 +143,13 @@
                 <!-- Street Address (Textbox) -->
                 <div id="div_street_address">
                     <label for="street_address">Street Address</label><br>
-                    <input type="text" name="street_address" id="street_address" pattern="^{1,40}$"><br><br>
+                    <input type="text" name="street_address" id="street_address" pattern="^{1,40}$" required><br><br>
                 </div>
 
                 <!-- Suburb (Textbox) -->
                 <div id="div_suburb">
                     <label for="suburb">Suburb</label><br>
-                    <input type="text" name="suburb" id="suburb" pattern="^{1,40}$"><br><br>
+                    <input type="text" name="suburb" id="suburb" pattern="^{1,40}$" required><br><br>
                 </div>
 
                 <!-- State (Select Box) -->
@@ -171,7 +171,7 @@
                 <!-- Postcode (Textbox) -->
                 <div id="div_postcode">
                     <label for="postcode">Postcode</label><br>
-                    <input type="text" name="postcode" id="postcode" pattern="^{4}$">
+                    <input type="text" name="postcode" id="postcode" pattern="^{4}$" required>
                 </div>
 
             </fieldset>
