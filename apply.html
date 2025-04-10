@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Job Application page of the Rainy Season website.">
+    <meta name="keywords" content="HTML, Doctype, Head, Body, Meta, Headings, Strong, Emphasis, Form">
+    <meta name="author" content="Jacob Ang">
+    <title>Rainy Season Job Application Page</title>
+</head>
+
+<!-- Reference to external CSS file -->
+<link href="styles/rainyseason.css" rel="stylesheet">
+
+<body>
+    <header>
+        <img id="logo" src="images/logo.png" alt="Rainy Season Logo">
+        <h1 id="title">Rainy Season</h1>
+            
+        <!-- Navigation menu -->
+        <nav>
+            <ul>
+                <li class="menu"><a href="index.html" title="This takes you to the Home page.">Home</a></li>
+                <li class="menu"><a href="jobs.html" title="This takes you to the Position Descriptions page.">Jobs</a></li>
+                <li class="menu"><a href="apply.html" title="This takes you to the Job Applications page.">Apply</a></li>
+                <li class="menu"><a href="about.html" title="This takes you to the About Us page.">About</a></li>
+                <li class="menu"><a href="mailto:info@rainyseason.com.au" title="Allows you to contact our email.">Email</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="heading">
+        <h2>Rainy Season Job Application Form</h2>
+        <p>In order to express your interest, please fill out the form below. All information is sent directly to management and is not passed through any third party.</p>
+
+    </section>
+
+    <section id="form">
+        
+        <!-- Information will be sent through POST method and echoed back with the values inputted -->
+        <form action="https://mercury.swin.edu.au/it000000/formtest.php" method="post">
+
+            <fieldset id="personal_info">
+                <legend>Personal Info</legend>
+
+                <div id="name">
+
+                    <!-- First Name (Textbox) -->
+                    <div id="div_first_name">
+                        <label for="first_name">First Name</label><br>
+                        <input type="text" name="first_name" id="first_name" pattern="^[a-zA-Z]{1,20}$">
+                    </div>
+
+                    <!-- Last Name (Textbox) -->
+                    <div id="div_last_name">
+                        <label for="last_name">Last Name</label><br>
+                        <input type="text" name="last_name" id="last_name" pattern="^[a-zA-Z]{1,20}$"><br><br>
+                    </div>
+
+                </div>
+
+                <div id="contact">
+
+                    <!-- Email Address (Textbox) -->
+                    <div id="div_email_address">
+                        <label for="email_address">Email Address</label><br>
+                        <input type="text" name="email_address" id="email_address" pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$"><br> <!-- RegEx sourced from https://regexr.com/3e48o -->
+                    </div>
+                    
+                    <!-- Phone Number (Textbox) -->
+                    <div id="div_phone_number">
+                        <label for="phone_number">Phone Number</label><br>
+                        <input type="text" name="phone_number" id="phone_number" pattern="^[\d ]{8,12}$"><br><br>
+                    </div>
+
+                </div>
+
+                <div id="other">
+
+                    <!-- Date of Birth (Textbox) -->
+                    <div id="div_date_of_birth">
+                        <label for="date_of_birth">Date of Birth</label><br>
+                        <input type="text" name="date_of_birth" id="date_of_birth" placeholder="DD/MM/YYYY" pattern="^(0[1-9]|[12]\d|3[01])\/(0[1-9]|1[0-2])\/\d{4}$" required><br><br>
+                    </div>
+                    
+                    <!-- Gender (Radio Buttons)-->
+                    <div id="div_gender">
+                        <legend>Gender</legend>
+                        <input type="radio" name="gender" id="male">
+                        <label for="male">Male</label><br>
+                        <input type="radio" name="gender" id="female">
+                        <label for="female">Female</label><br>
+                        <input type="radio" name="gender" id="other" checked>      
+                        <label for="other">Other</label><br>  
+                    </div>
+
+                </div>
+            </fieldset>
+
+            <fieldset id="job_related">
+                <legend>Job Related</legend>
+                
+                <!-- Job Reference Number (Select Box) -->
+                <div id="div_job_reference_number">
+                    <label for="job_reference_number">Job Reference Number</label><br>
+                    <select name="job_reference_number" id="job_reference_number" required>
+                        <!-- "" is selected by default but cannot be used as a valid selection -->
+                        <option value="" disabled selected>Please Select a Reference Number</option>
+                        <option value="RX7FD">RX7FD - Cybersecurity Specialist</option>
+                        <option value="SIGC8">SIGC8 - Software Developer</option>
+                    </select><br><br>
+
+                </div>
+
+                <div id="skills">
+
+                    <!-- Required Technical List (Checkboxes) -->
+                    <div id="div_required_technical_list">
+                        <label >Required Technical List</label><br>
+                        <label for=""></label>
+                        <input type="checkbox" name="" id=""><br>
+                        <label for=""></label>
+                        <input type="checkbox" name="" id=""><br>
+                        <label for=""></label>
+                        <input type="checkbox" name="" id=""><br>
+                        <label for=""></label>
+                        <input type="checkbox" name="" id=""><br>
+                        <label for=""></label>
+                        <input type="checkbox" name="" id=""><br><br>
+                    </div>
+
+                    <!-- Other Skills (Textbox) -->
+                    <div id="div_other_skills">
+                        <label for="other_skills">Other Skills</label><br>
+                        <textarea name="other_skills" id="other_skills"></textarea>
+                    </div>
+                    
+                </div>
+            </fieldset>
+
+            <fieldset id="address">
+                <legend>Address</legend>
+
+                <!-- Street Address (Textbox) -->
+                <div id="div_street_address">
+                    <label for="street_address">Street Address</label><br>
+                    <input type="text" name="street_address" id="street_address" pattern="^{1,40}$"><br><br>
+                </div>
+
+                <!-- Suburb (Textbox) -->
+                <div id="div_suburb">
+                    <label for="suburb">Suburb</label><br>
+                    <input type="text" name="suburb" id="suburb" pattern="^{1,40}$"><br><br>
+                </div>
+
+                <!-- State (Select Box) -->
+                <div id="div_state">
+                    <label for="state">State</label><br>
+                    <select name="state" id="state" required>
+                        <option value="">Please Select a State</option>
+                        <option value="ACT">ACT</option>
+                        <option value="NSW">NSW</option>
+                        <option value="NT">NT</option>
+                        <option value="QLD">QLD</option>
+                        <option value="SA">SA</option>
+                        <option value="TAS">TAS</option>
+                        <option value="VIC">VIC</option>
+                        <option value="WA">WA</option>
+                    </select><br><br>
+                </div>
+
+                <!-- Postcode (Textbox) -->
+                <div id="div_postcode">
+                    <label for="postcode">Postcode</label><br>
+                    <input type="text" name="postcode" id="postcode" pattern="^{4}$">
+                </div>
+
+            </fieldset>
+
+            <button name="submit" id="submit">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <hr id="footer_line">
+        <p><a href="https://rainy-season.atlassian.net/">Rainy Season Jira</a></p>
+    </footer>
+</body>
+
+</html>
