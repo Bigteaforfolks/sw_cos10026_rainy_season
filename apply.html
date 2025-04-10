@@ -28,7 +28,8 @@
         </nav>
     </header>
 
-    <section id="heading">
+    <section id="text">
+
         <h2>Rainy Season Job Application Form</h2>
         <p>In order to express your interest, please fill out the form below. All information is sent directly to management and is not passed through any third party.</p>
 
@@ -42,32 +43,32 @@
             <fieldset id="personal_info">
                 <legend>Personal Info</legend>
 
-                <div id="name">
+                <div>
 
                     <!-- First Name (Textbox) -->
-                    <div id="div_first_name">
+                    <div>
                         <label for="first_name">First Name</label><br>
                         <input type="text" name="first_name" id="first_name" pattern="^[a-zA-Z]{1,20}$" required>
                     </div>
 
                     <!-- Last Name (Textbox) -->
-                    <div id="div_last_name">
+                    <div>
                         <label for="last_name">Last Name</label><br>
                         <input type="text" name="last_name" id="last_name" pattern="^[a-zA-Z]{1,20}$" required><br><br>
                     </div>
 
                 </div>
 
-                <div id="contact">
+                <div>
 
                     <!-- Email Address (Textbox) -->
-                    <div id="div_email_address">
+                    <div>
                         <label for="email_address">Email Address</label><br>
                         <input type="text" name="email_address" id="email_address" pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$" required><br> <!-- RegEx sourced from https://regexr.com/3e48o -->
                     </div>
                     
                     <!-- Phone Number (Textbox) -->
-                    <div id="div_phone_number">
+                    <div>
                         <label for="phone_number">Phone Number</label><br>
                         <input type="text" name="phone_number" id="phone_number" pattern="^[\d ]{8,12}$" required><br><br>
                     </div>
@@ -77,13 +78,13 @@
                 <div id="other">
 
                     <!-- Date of Birth (Textbox) -->
-                    <div id="div_date_of_birth">
+                    <div>
                         <label for="date_of_birth">Date of Birth</label><br>
                         <input type="text" name="date_of_birth" id="date_of_birth" placeholder="DD/MM/YYYY" pattern="^(0[1-9]|[12]\d|3[01])\/(0[1-9]|1[0-2])\/\d{4}$" required><br><br>
                     </div>
                     
                     <!-- Gender (Radio Buttons)-->
-                    <div id="div_gender">
+                    <div>
                         <legend>Gender</legend>
                         <input type="radio" name="gender" id="male">
                         <label for="male">Male</label><br>
@@ -100,7 +101,7 @@
                 <legend>Job Related</legend>
                 
                 <!-- Job Reference Number (Select Box) -->
-                <div id="div_job_reference_number">
+                <div>
                     <label for="job_reference_number">Job Reference Number</label><br>
                     <select name="job_reference_number" id="job_reference_number" required>
                         <!-- "" is selected by default but cannot be used as a valid selection -->
@@ -111,25 +112,38 @@
 
                 </div>
 
-                <div id="skills">
+                <div>
 
                     <!-- Required Technical List (Checkboxes) -->
-                    <div id="div_required_technical_list">
-                        <label >Required Technical List</label><br>
-                        <label for=""></label>
-                        <input type="checkbox" name="" id="" required><br>
-                        <label for=""></label>
-                        <input type="checkbox" name="" id=""><br>
-                        <label for=""></label>
-                        <input type="checkbox" name="" id=""><br>
-                        <label for=""></label>
-                        <input type="checkbox" name="" id=""><br>
-                        <label for=""></label>
-                        <input type="checkbox" name="" id=""><br><br>
+                    <div>
+                        <div>
+                            <input type="checkbox" name="wireshark" id="wireshark" required>
+                            <label for="wireshark">30&#43; years of experience with Wireshark</label>
+                        </div>
+                        
+                        <div>
+                            <input type="checkbox" name="c_sharp" id="c_sharp">
+                            <label for="c_sharp">25&#43; years of experience with C&#35;</label>
+                        </div>
+                        
+                        <div>
+                            <input type="checkbox" name="jira" id="jira">
+                            <label for="jira">23&#43; years of experience with Jira</label>
+                        </div>
+                        
+                        <div>
+                            <input type="checkbox" name="github" id="github">
+                            <label for="github">Average 5000&#43; GitHub commits per annum</label>
+                        </div>
+                        
+                        <div>
+                            <input type="checkbox" name="script_kiddie" id="script_kiddie">
+                            <label for="script_kiddie">University of Script Kiddies &apos;Certificate of Mass Nuisance&apos;</label>
+                        </div>
                     </div>
 
                     <!-- Other Skills (Textbox) -->
-                    <div id="div_other_skills">
+                    <div>
                         <label for="other_skills">Other Skills</label><br>
                         <textarea name="other_skills" id="other_skills"></textarea>
                     </div>
@@ -137,23 +151,23 @@
                 </div>
             </fieldset>
 
-            <fieldset id="address">
+            <fieldset>
                 <legend>Address</legend>
 
                 <!-- Street Address (Textbox) -->
-                <div id="div_street_address">
+                <div>
                     <label for="street_address">Street Address</label><br>
                     <input type="text" name="street_address" id="street_address" pattern="^{1,40}$" required><br><br>
                 </div>
 
                 <!-- Suburb (Textbox) -->
-                <div id="div_suburb">
+                <div>
                     <label for="suburb">Suburb</label><br>
                     <input type="text" name="suburb" id="suburb" pattern="^{1,40}$" required><br><br>
                 </div>
 
                 <!-- State (Select Box) -->
-                <div id="div_state">
+                <div>
                     <label for="state">State</label><br>
                     <select name="state" id="state" required>
                         <option value="">Please Select a State</option>
@@ -169,7 +183,7 @@
                 </div>
 
                 <!-- Postcode (Textbox) -->
-                <div id="div_postcode">
+                <div>
                     <label for="postcode">Postcode</label><br>
                     <input type="text" name="postcode" id="postcode" pattern="^{4}$" required>
                 </div>
