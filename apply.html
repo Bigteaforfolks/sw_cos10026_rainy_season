@@ -6,10 +6,11 @@
     <meta name="keywords" content="HTML, Doctype, Head, Body, Meta, Headings, Strong, Emphasis, Form">
     <meta name="author" content="Jacob Ang">
     <title>Rainy Season Job Application Page</title>
-</head>
 
-<!-- Reference to external CSS file -->
-<link href="styles/rainyseason.css" rel="stylesheet">
+    <!-- Reference to external CSS file -->
+    <link href="styles/rainyseason.css" rel="stylesheet">
+
+</head>
 
 <body>
     <header>
@@ -35,7 +36,7 @@
 
     </section>
 
-    <section id="form">
+    <div id="form">
         
         <!-- Information will be sent through POST method and echoed back with the values inputted -->
         <form action="https://mercury.swin.edu.au/it000000/formtest.php" method="post">
@@ -48,13 +49,13 @@
                     <!-- First Name (Textbox) -->
                     <div>
                         <label for="first_name">First Name</label><br>
-                        <input type="text" name="first_name" id="first_name" pattern="^[a-zA-Z]{1,20}$" required>
+                        <input type="text" name="first_name" id=first_name class="name" pattern="^[a-zA-Z]{1,20}$" required>
                     </div>
 
                     <!-- Last Name (Textbox) -->
                     <div>
                         <label for="last_name">Last Name</label><br>
-                        <input type="text" name="last_name" id="last_name" pattern="^[a-zA-Z]{1,20}$" required><br><br>
+                        <input type="text" name="last_name" id="last_name" class="name" pattern="^[a-zA-Z]{1,20}$" required><br><br>
                     </div>
 
                 </div>
@@ -64,18 +65,18 @@
                     <!-- Email Address (Textbox) -->
                     <div>
                         <label for="email_address">Email Address</label><br>
-                        <input type="text" name="email_address" id="email_address" pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$" required><br> <!-- RegEx sourced from https://regexr.com/3e48o -->
+                        <input type="text" name="email_address" id="email_address" class="contact" pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$" required><br> <!-- RegEx sourced from https://regexr.com/3e48o -->
                     </div>
                     
                     <!-- Phone Number (Textbox) -->
                     <div>
                         <label for="phone_number">Phone Number</label><br>
-                        <input type="text" name="phone_number" id="phone_number" pattern="^[\d ]{8,12}$" required><br><br>
+                        <input type="text" name="phone_number" id="phone_number" class="contact" pattern="^[\d ]{8,12}$" required><br><br>
                     </div>
 
                 </div>
 
-                <div id="other">
+                <div>
 
                     <!-- Date of Birth (Textbox) -->
                     <div>
@@ -85,13 +86,15 @@
                     
                     <!-- Gender (Radio Buttons)-->
                     <div>
-                        <legend>Gender</legend>
-                        <input type="radio" name="gender" id="male">
-                        <label for="male">Male</label><br>
-                        <input type="radio" name="gender" id="female">
-                        <label for="female">Female</label><br>
-                        <input type="radio" name="gender" id="other" checked required>      
-                        <label for="other">Other</label><br>  
+                        <fieldset>
+                            <legend>Gender</legend>
+                            <input type="radio" name="gender" id="male">
+                            <label for="male">Male</label><br>
+                            <input type="radio" name="gender" id="female">
+                            <label for="female">Female</label><br>
+                            <input type="radio" name="gender" id="other" checked required>      
+                            <label for="other">Other</label><br>  
+                        </fieldset>
                     </div>
 
                 </div>
@@ -105,11 +108,10 @@
                     <label for="job_reference_number">Job Reference Number</label><br>
                     <select name="job_reference_number" id="job_reference_number" required>
                         <!-- "" is selected by default but cannot be used as a valid selection -->
-                        <option value="" disabled selected required>Please Select a Reference Number</option>
-                        <option value="RX7FD">RX7FD - Cybersecurity Specialist</option>
-                        <option value="SIGC8">SIGC8 - Software Developer</option>
+                        <option value="" disabled selected>Please Select a Reference Number</option>
+                        <option value="RX7FD">RX7FD &#8209; Cybersecurity Specialist</option>
+                        <option value="SIGC8">SIGC8 &#8209; Software Developer</option>
                     </select><br><br>
-
                 </div>
 
                 <div>
@@ -179,7 +181,7 @@
                         <option value="TAS">TAS</option>
                         <option value="VIC">VIC</option>
                         <option value="WA">WA</option>
-                    </select><br><br>
+                    </select>
                 </div>
 
                 <!-- Postcode (Textbox) -->
@@ -192,7 +194,7 @@
 
             <button name="submit" id="submit">Submit</button>
         </form>
-    </section>
+    </div>
 
     <footer>
         <hr id="footer_line">
