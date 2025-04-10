@@ -6,3 +6,88 @@ created: 2025/04/08
 last modified: 2025/04/08 (Jacob)
 description: universal stylesheet
 */
+
+
+/* universal style elements */
+* {font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: midnightblue;
+    color: white;
+    justify-content: space-between;
+    padding-right: 30px;
+    height: 125px;
+}
+
+body {
+    margin: 0;
+}
+
+h2, h3, h4, p, img {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.branding a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+}
+
+#logo {
+    height: 85px;
+    width: auto;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+.menu {
+    display: inline-block;
+}
+
+.menu a {
+    font-size: 1.5em;
+    text-decoration: none;
+    color: white;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.menu :hover {
+    text-decoration: underline;
+}
+
+
+/* Home page style elements */
+#team_photo {
+    margin: 0;
+    width: 100%;
+    height: auto;
+}
+
+/* Jobs page style elements */
+.superior {
+    font-weight: bold;
+}
+
+aside {
+    float: right;
+    width: 25%;
+    margin: 0 25px;
+    border: 4px inset midnightblue;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px gray;
+}
+
+aside ol, aside ul, #positions ol, #positions ul {
+    margin-left: 10%;
+    margin-right: 10%;
+}
