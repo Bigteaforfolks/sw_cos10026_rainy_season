@@ -145,10 +145,6 @@ aside #apply_link a:hover {
     text-decoration: none;
 }
 
-.separator {
-    margin: 50px 10px;
-}
-
-#footer_line {
+.separator, #footer_line {
     margin: 50px 10px;
 }
