@@ -5,17 +5,21 @@
     <meta name="description" content="About page of Rainy Season website">
     <meta name="keywords" content="Rainy Season, About, Information, Team, Group, Info">
     <meta name="author" content="Oakley Tang">
-    <title>About the Rainy Season team</title>
-</head>
+    <title>About &sol; Rainy Season</title>
 
-<!-- Reference to external CSS file -->
-<link href="styles/rainyseason.css" rel="stylesheet">
+    <!-- Reference to external CSS file -->
+    <link href="styles/styles.css" rel="stylesheet">
+</head>
 
 <body>
     <header>
-        <img id="logo" src="images/logo.png" alt="Rainy Season Logo">
-        <h1 id="title">Rainy Season</h1>
-            
+        <div class="branding">
+            <a href="index.html" title="Rainy Season">
+                <img id="logo" src="images/logo.png" alt="Rainy Season Logo">
+                <h1 id="title">Rainy Season</h1>
+            </a>
+        </div>
+
         <!-- Navigation menu -->
         <nav>
             <ul>
@@ -82,15 +86,15 @@
         </dl>
     </section>
 
-    <section id="team_photo">
+    <div class="team_photo_section">
         <p>Rainy Season Team</p>
         <img id="team_photo"
         src="images/team_photo"
         alt="Rainy Season Team">
-    </section>
+    </div>
     
     <!-- Member interests section -->
-    <section id="interests">
+    <div class="interests">
         <table>
             <caption>Interests of Rainy Season team members</caption>
             <thead>
@@ -124,6 +128,6 @@
                 </tr>
             </tbody>
         </table>        
-    </section>
+    </div>
 </body>
 </html>

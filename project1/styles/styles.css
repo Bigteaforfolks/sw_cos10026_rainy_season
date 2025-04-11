@@ -1,0 +1,154 @@
+/*
+filename: rainyseason.css
+author: Oakley Tang, Jacob Ang
+created: 2025/04/08
+last modified: 2025/04/11 (Oakley)
+description: universal stylesheet
+*/
+
+
+/* universal style elements */
+* {font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: midnightblue;
+    color: white;
+    justify-content: space-between;
+    padding-right: 30px;
+    height: 125px;
+}
+
+body {
+    margin: 0;
+}
+
+.branding a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+}
+
+#logo {
+    height: 85px;
+    width: auto;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.menu {
+    display: inline-block;
+}
+
+.menu a {
+    font-size: 1.5em;
+    text-decoration: none;
+    color: white;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.menu :hover {
+    text-decoration: underline;
+}
+
+
+/* Home page style elements */
+
+
+/* Jobs page style elements */
+h1 {
+    font: bold 3em 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#description h2, #description p {
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+#description h2, .positions h2 {
+    font-size: 2em;
+}
+
+#description p, .positions h3, aside h3 {
+    font-size: 1.5em;
+}
+
+.superior {
+    font-weight: bold;
+}
+
+aside {
+    float: right;
+    width: 25%;
+    margin: 25px 25px;
+    padding: 10px 0;
+    border: 4px inset midnightblue;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px gray;
+}
+
+aside ol, aside ul {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+aside p, aside h3 {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+aside .job a {
+    color: black;
+}
+
+aside .job a:hover {
+    text-decoration: none;
+}
+
+aside #apply_link a {
+    text-decoration: underline;
+    color: black;
+}
+
+aside #apply_link a:hover {
+    text-decoration: none;
+}
+
+.positions p, .positions ol, .positions ul, aside p, aside ol, aside ul {
+    font-size: 1.25em;
+}
+
+#about {
+    font-size: 1.5em;
+    text-align: center;
+    margin-top: 131px;
+    margin-bottom: 145px;
+    margin-left: 5%;
+    margin-right: 35%;
+}
+
+.positions ol, .positions ul, .positions h2, .positions h3, .positions p {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.back_to_top a {
+    color: black;
+}
+
+.back_to_top a:hover {
+    text-decoration: none;
+}
+
+.separator {
+    margin: 50px 10px;
+}
+
+#footer_line {
+    margin: 50px 10px;
+}
