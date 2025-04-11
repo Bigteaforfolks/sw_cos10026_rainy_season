@@ -150,11 +150,3 @@ aside #apply_link a:hover {
 }
 
 /* Start of apply.html specific styling*/
-fieldset {
-    border: 2px groove;
-    padding: 10px
-}
-
-legend {
-    display: none;
-}
