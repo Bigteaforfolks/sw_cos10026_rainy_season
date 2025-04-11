@@ -70,11 +70,11 @@ h1 {
     margin-right: 10%;
 }
 
-#description h2, #positions h2 {
+#description h2, .positions h2 {
     font-size: 2em;
 }
 
-#description p, #positions h3, aside h3 {
+#description p, .positions h3, aside h3 {
     font-size: 1.5em;
 }
 
@@ -102,11 +102,11 @@ aside p, aside h3 {
     margin-right: 5%;
 }
 
-aside #job a {
+aside .job a {
     color: black;
 }
 
-aside #job a:hover {
+aside .job a:hover {
     text-decoration: none;
 }
 
@@ -119,7 +119,7 @@ aside #apply_link a:hover {
     text-decoration: none;
 }
 
-#positions p, #positions ol, #positions ul, aside p, aside ol, aside ul {
+.positions p, .positions ol, .positions ul, aside p, aside ol, aside ul {
     font-size: 1.25em;
 }
 
@@ -132,20 +132,20 @@ aside #apply_link a:hover {
     margin-right: 35%;
 }
 
-#positions ol, #positions ul, #positions h2, #positions h3, #positions p {
+.positions ol, .positions ul, .positions h2, .positions h3, .positions p {
     margin-left: 5%;
     margin-right: 5%;
 }
 
-#back_to_top a {
+.back_to_top a {
     color: black;
 }
 
-#back_to_top a:hover {
+.back_to_top a:hover {
     text-decoration: none;
 }
 
-#job_separator {
+.separator {
     margin: 50px 10px;
 }
 

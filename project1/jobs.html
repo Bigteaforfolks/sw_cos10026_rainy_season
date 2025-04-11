@@ -5,11 +5,11 @@
     <meta name="description" content="Jobs page of Rainy Season website">
     <meta name="keywords" content="Rainy Season, Jobs, Apply, Openings, Available, Work">
     <meta name="author" content="Oakley Tang">
-    <title>Jobs / Rainy Season</title>
-</head>
+    <title>Jobs &sol; Rainy Season</title>
 
-<!-- Reference to external CSS file -->
-<link href="styles/styles.css" rel="stylesheet">
+    <!-- Reference to external CSS file -->
+    <link href="styles/styles.css" rel="stylesheet">
+</head>
 
 <body>
     <header>
@@ -39,12 +39,12 @@
     </section>
 
     <!-- Aside for company and general job information -->
-    <section id="aside">
+    <div class="aside">
         <aside>
             <h3>Currently available positions</h3>
             <ul>
-                <li id="job"><a href="#cybersecurity_specialist" title="Click to jump to this job!">Cybersecurity Specialist</a></li>
-                <li id="job"><a href="#software_developer" title="Click to jump to this job!">Software Developer</a></li>
+                <li class="job"><a href="#cybersecurity_specialist" title="Click to jump to this job!">Cybersecurity Specialist</a></li>
+                <li class="job"><a href="#software_developer" title="Click to jump to this job!">Software Developer</a></li>
             </ul>
         
             <h3>Perks offered to all positions</h3>
@@ -61,7 +61,7 @@
             <h3 id="apply_link"><a href="apply.html" title="Application page">Click here to apply!</a></h3>
             
         </aside>
-    </section>
+    </div>
 
     <section id="about">
         <h3>About Rainy Season</h3>
@@ -72,9 +72,9 @@
             <p>We operate the "Stormcloud" database, which users can search and and filter through to find the history of used cars from all over the world.</p>
     </section>
 
-    <hr id="job_separator">
+    <hr class="separator">
 
-    <section id="positions">
+    <div class="positions">
         <!-- Job: Cybersecurity specialist -->
         <section id="cybersecurity_specialist">
             <h2>Cybersecurity Specialist</h2>
@@ -86,7 +86,7 @@
                 <p>This position reports to the <span class="superior">Chief Information Security Officer (CISO)</span>.</p>
             </div>
 
-            <div class="responsibilities"></div>
+            <div class="responsibilities">
                 <h3>Key responsibilities, in order of priority</h3>
                 <ol>
                     <li>Design, install, and maintain cybersecurity systems</li>
@@ -113,10 +113,10 @@
                 </ul>
             </div>
 
-            <h3 id="back_to_top"><a href="#">Back to top</a></h3>
+            <h3 class="back_to_top"><a href="#">Back to top</a></h3>
         </section>
 
-        <hr id="job_separator">
+        <hr class="separator">
 
         <section id="software_developer">
             <h2>Software Developer</h2>
@@ -146,6 +146,7 @@
                     <li>Strong knowledge of programming languages such as Python, Java, or C++</li>
                     <li>Strong problem-solving skills</li>
                 </ul>
+            </div>
 
             <div class="preferable_skills">
                 <h3>Preferable skills and traits</h3>
@@ -156,9 +157,9 @@
                 </ul>
             </div>
 
-            <h3 id="back_to_top"><a href="#">Back to top</a></h3>
+            <h3 class="back_to_top"><a href="#">Back to top</a></h3>
         </section>
-    </section>
+    </div>
 
     <footer>
         <hr id="footer_line">
