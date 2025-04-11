@@ -148,3 +148,13 @@ aside #apply_link a:hover {
 .separator, #footer_line {
     margin: 50px 10px;
 }
+
+/* Start of apply.html specific styling*/
+fieldset {
+    border: 2px groove;
+    padding: 10px
+}
+
+legend {
+    display: none;
+}
