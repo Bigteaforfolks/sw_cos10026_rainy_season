@@ -41,7 +41,7 @@
     </section>
     
     <!-- Information will be sent through POST method and echoed back with the values inputted -->
-    <form class="form-container" action="https://mercury.swin.edu.au/it000000/formtest.php" method="post">
+    <form id="form-container" action="https://mercury.swin.edu.au/it000000/formtest.php" method="post">
 
         <div class="form-section form-section--personalinformation">
 
@@ -56,13 +56,13 @@
                 <!-- First Name (Textbox) -->
                 <div class="form-field">
                     <label for="firstname" class="form-field__label">First Name</label>
-                    <input type="text" name="firstname" id="firstname" class="form-field__textbox" pattern="^[a-zA-Z]{1,20}$" required>
+                    <input type="text" name="firstname" id="firstname" class="form-field__textbox" pattern="^[a-zA-Z]{1,20}$" placeholder="e.g. John" required>
                 </div>
 
                 <!-- Last Name (Textbox) -->
                 <div class="form-field">
                     <label for="lastname" class="form-field__label">Last Name</label>
-                    <input type="text" name="lastname" id="lastname" class="form-field__textbox" pattern="^[a-zA-Z]{1,20}$" required>
+                    <input type="text" name="lastname" id="lastname" class="form-field__textbox" pattern="^[a-zA-Z]{1,20}$" placeholder="e.g. Smith" required>
                 </div>
 
             </div>
@@ -72,13 +72,13 @@
                 <!-- Email Address (Textbox) -->
                 <div class="form-field">
                     <label for="emailaddress" class="form-field__label">Email Address</label>
-                    <input type="text" name="emailaddress" id="emailaddress" class="form-field__textbox" pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$" required> <!-- RegEx sourced from https://regexr.com/3e48o -->
+                    <input type="text" name="emailaddress" id="emailaddress" class="form-field__textbox" pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$" placeholder="e.g. user@domain.com.au" required> <!-- RegEx sourced from https://regexr.com/3e48o -->
                 </div>
                 
                 <!-- Phone Number (Textbox) -->
                 <div class="form-field">
                     <label for="phonenumber" class="form-field__label">Phone Number</label>
-                    <input type="text" name="phonenumber" id="phonenumber" class="form-field__textbox" pattern="^[\d ]{8,12}$" required>
+                    <input type="text" name="phonenumber" id="phonenumber" class="form-field__textbox" pattern="^[\d ]{8,12}$" placeholder="e.g. 0412345678" required>
                 </div>
 
             </div>
@@ -88,7 +88,7 @@
                 <!-- Date of Birth (Textbox) -->
                 <div class="form-field">
                     <label for="dateofbirth" class="form-field__label">Date of Birth</label>
-                    <input type="text" name="dateofbirth" id="dateofbirth" class="form-field__textbox" placeholder="DD/MM/YYYY" pattern="^(0[1-9]|[12]\d|3[01])\/(0[1-9]|1[0-2])\/\d{4}$" required>
+                    <input type="text" name="dateofbirth" id="dateofbirth" class="form-field__textbox" pattern="^(0[1-9]|[12]\d|3[01])\/(0[1-9]|1[0-2])\/\d{4}$" placeholder="DD/MM/YYYY" required>
                 </div>
                 
                 <!-- Gender (Radio Buttons)-->
@@ -129,13 +129,13 @@
                 <!-- Street Address (Textbox) -->
                 <div class="form-field">
                     <label for="streetaddress" class="form-field__label">Street Address</label>
-                    <input type="text" name="streetaddress" id="streetaddress" class="form-field__textbox" pattern="^{1,40}$" required>
+                    <input type="text" name="streetaddress" id="streetaddress" class="form-field__textbox" pattern="^{1,40}$" placeholder="e.g. 427-451 Burwood Rd" required>
                 </div>
     
                 <!-- Suburb (Textbox) -->
                 <div class="form-field">
                     <label for="suburb" class="form-field__label">Suburb</label>
-                    <input type="text" name="suburb" id="suburb" class="form-field__textbox" pattern="^{1,40}$" required>
+                    <input type="text" name="suburb" id="suburb" class="form-field__textbox" pattern="^{1,40}$" placeholder="e.g. Hawthorn" required>
                 </div>
     
                 <!-- State (Select Box) -->
@@ -157,7 +157,7 @@
                 <!-- Postcode (Textbox) -->
                 <div class="form-field">
                     <label for="postcode" class="form-field__label">Postcode</label>
-                    <input type="text" name="postcode" id="postcode" class="form-field__textbox" pattern="^{4}$" required>
+                    <input type="text" name="postcode" id="postcode" class="form-field__textbox" pattern="^{4}$" placeholder="e.g. 3122" required>
                 </div>
     
             </div>
@@ -192,42 +192,49 @@
                 <div>
                     <p>Technical Skills and Experience</p>
                     <div class="form-field">
-                        <input type="checkbox" name="wireshark" id="wireshark" class="form-field__textbox" required>
+                        <input type="checkbox" name="wireshark" id="wireshark" class="form-field__checkbox" required>
                         <label for="wireshark" class="form-field__label"><strong>30&#43;</strong> years of experience with <em>Wireshark</em></label>
                     </div>
                     
                     <div class="form-field">
-                        <input type="checkbox" name="csharp" id="csharp" class="form-field__textbox">
+                        <input type="checkbox" name="csharp" id="csharp" class="form-field__checkbox">
                         <label for="csharp" class="form-field__label"><strong>25&#43;</strong> years of experience with <em>C&#35;</em></label>
                     </div>
                     
                     <div class="form-field">
-                        <input type="checkbox" name="jira" id="jira" class="form-field__textbox">
+                        <input type="checkbox" name="jira" id="jira" class="form-field__checkbox">
                         <label for="jira" class="form-field__label"><strong>23&#43;</strong> years of experience with <em>Jira</em></label>
                     </div>
                     
                     <div class="form-field">
-                        <input type="checkbox" name="github" id="github" class="form-field__textbox">
+                        <input type="checkbox" name="github" id="github" class="form-field__checkbox">
                         <label for="github" class="form-field__label">Average <strong>5000&#43;</strong> <em>GitHub commits</em> per annum</label>
                     </div>
                     
                     <div class="form-field">
-                        <input type="checkbox" name="scriptkiddie" id="scriptkiddie" class="form-field__textbox">
+                        <input type="checkbox" name="scriptkiddie" id="scriptkiddie" class="form-field__checkbox">
                         <label for="scriptkiddie" class="form-field__label"><em>University of Script Kiddies</em> <strong>&apos;Certificate of Mass Nuisance&apos;</strong></label>
                     </div>
-                </div>
-
-                <!-- Other Skills (Textbox) -->
-                <div class="form-field">
-                    <label for="otherskills" class="form-field__label">Other Skills</label>
-                    <textarea name="otherskills" id="otherskills" class="form-field__textarea"></textarea>
                 </div>
                 
             </div>
 
+            <div class="form-group form-group--otherskills">
+
+                <!-- Other Skills (Textbox) -->
+                <div class="form-field">
+                    <label for="otherskills" class="form-field__label" id="form-field">Other Skills</label>
+                    <textarea name="otherskills" id="otherskills" class="form-field__textarea" rows="3"></textarea>
+                </div>
+
+            </div>
+
         </div>
-    
-        <button name="submit" id="submit">Submit</button>
+
+        <div class="form-input">
+            <button id="submit-button" form="form-container">Submit</button>
+        </div>
+
     </form>
 
     <footer>
