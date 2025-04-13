@@ -148,3 +148,115 @@ aside #apply_link a:hover {
 .separator, #footer_line {
     margin: 50px 10px;
 }
+
+/* Start of apply.html specific styling*/
+
+.form-introduction h2 {
+    font-size: 2em;
+    text-align: center;
+}
+
+.form-introduction p {
+    font-size: 1.5em;
+    text-align: center;
+}
+
+#form-container {
+    padding: 10px 30%;
+}
+
+.form-section {
+    border: solid 1px;
+    padding: 20px;
+    margin: 10px 0px;
+}
+
+.form-section-introduction h3 {
+    font-size: 1.5em;
+    margin: 10px 0px;
+}
+
+.form-section-introduction p {
+    font-size: 1em;
+    margin-top: 5px 0px;
+}
+
+.form-group {
+    margin-bottom: 25px;
+    margin: 25px 30px;
+}
+
+.form-field {
+    align-items: center;
+    padding: 5px 0px;
+}
+
+.form-field__label {
+    display: inline-block;
+    width: 20%
+}
+
+.form-field__textbox {
+    width: 200px;
+}
+
+.form-group--name .form-field__textbox {
+    width: 100px;
+}
+
+.form-group--contact #phonenumber {
+    width: 150px;
+}
+
+.form-group--other #dateofbirth {
+    width: 85px;
+    margin-bottom: 30px;
+}
+
+.form-section--address #streetaddress {
+    width: 300px;
+}
+
+.form-section--address #postcode {
+    width: 70px
+}
+
+.form-group--technicalskills {
+    margin-bottom: 0px;
+}
+
+.form-group--technicalskills p {
+    margin-bottom: 5px;
+}
+
+.form-group--technicalskills .form-field__label {
+    width: 500px;
+}
+
+.form-group--otherskills {
+    margin-top: 0px;
+}
+
+.form-group--otherskills .form-field__label, .form-group--otherskills .form-field__textarea {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.form-group--otherskills .form-field__label {
+    width: 100px;
+}
+
+.form-group--otherskills .form-field__textarea {
+    width: 500px;
+}
+
+.form-input {
+    display: flex;
+    justify-content: right;
+}
+
+#submit-button {
+    width: 150px;
+    height: 60px;
+    font-size: 2em;
+}

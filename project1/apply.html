@@ -32,149 +32,116 @@
         </nav>
     </header>
 
-    <section id="text">
+    <!-- Information about the page -->
+    <section class="form-introduction">
 
         <h2>Rainy Season Job Application Form</h2>
         <p>In order to express your interest, please fill out the form below. All information is sent directly to management and is not passed through any third party.</p>
 
     </section>
+    
+    <!-- Information will be sent through POST method and echoed back with the values inputted -->
+    <form id="form-container" action="https://mercury.swin.edu.au/it000000/formtest.php" method="post">
 
-    <div id="form">
-        
-        <!-- Information will be sent through POST method and echoed back with the values inputted -->
-        <form action="https://mercury.swin.edu.au/it000000/formtest.php" method="post">
+        <div class="form-section form-section--personalinformation">
 
-            <fieldset id="personal_info">
-                <legend>Personal Info</legend>
+            <!-- Information about why personal info is collected -->
+            <section class="form-section-introduction">
+                <h3>Personal Information</h3>
+                <p>Please tell us about yourself&#33; This helps us get to know you&comma; as well as allowing us to get in contact with you when your application has been accepted&#33;</p>
+            </section>
 
-                <div>
+            <div class="form-group form-group--name">
 
-                    <!-- First Name (Textbox) -->
-                    <div>
-                        <label for="first_name">First Name</label><br>
-                        <input type="text" name="first_name" id=first_name class="name" pattern="^[a-zA-Z]{1,20}$" required>
-                    </div>
-
-                    <!-- Last Name (Textbox) -->
-                    <div>
-                        <label for="last_name">Last Name</label><br>
-                        <input type="text" name="last_name" id="last_name" class="name" pattern="^[a-zA-Z]{1,20}$" required><br><br>
-                    </div>
-
+                <!-- First Name (Textbox) -->
+                <div class="form-field">
+                    <label for="firstname" class="form-field__label">First Name</label>
+                    <input type="text" name="firstname" id="firstname" class="form-field__textbox" pattern="^[a-zA-Z]{1,20}$" placeholder="e.g. John" required>
                 </div>
 
-                <div>
-
-                    <!-- Email Address (Textbox) -->
-                    <div>
-                        <label for="email_address">Email Address</label><br>
-                        <input type="text" name="email_address" id="email_address" class="contact" pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$" required><br> <!-- RegEx sourced from https://regexr.com/3e48o -->
-                    </div>
-                    
-                    <!-- Phone Number (Textbox) -->
-                    <div>
-                        <label for="phone_number">Phone Number</label><br>
-                        <input type="text" name="phone_number" id="phone_number" class="contact" pattern="^[\d ]{8,12}$" required><br><br>
-                    </div>
-
+                <!-- Last Name (Textbox) -->
+                <div class="form-field">
+                    <label for="lastname" class="form-field__label">Last Name</label>
+                    <input type="text" name="lastname" id="lastname" class="form-field__textbox" pattern="^[a-zA-Z]{1,20}$" placeholder="e.g. Smith" required>
                 </div>
 
-                <div>
+            </div>
 
-                    <!-- Date of Birth (Textbox) -->
-                    <div>
-                        <label for="date_of_birth">Date of Birth</label><br>
-                        <input type="text" name="date_of_birth" id="date_of_birth" placeholder="DD/MM/YYYY" pattern="^(0[1-9]|[12]\d|3[01])\/(0[1-9]|1[0-2])\/\d{4}$" required><br><br>
-                    </div>
-                    
-                    <!-- Gender (Radio Buttons)-->
-                    <div>
-                        <fieldset>
-                            <legend>Gender</legend>
-                            <input type="radio" name="gender" id="male">
-                            <label for="male">Male</label><br>
-                            <input type="radio" name="gender" id="female">
-                            <label for="female">Female</label><br>
-                            <input type="radio" name="gender" id="other" checked required>      
-                            <label for="other">Other</label><br>  
-                        </fieldset>
-                    </div>
+            <div class="form-group form-group--contact">
 
+                <!-- Email Address (Textbox) -->
+                <div class="form-field">
+                    <label for="emailaddress" class="form-field__label">Email Address</label>
+                    <input type="text" name="emailaddress" id="emailaddress" class="form-field__textbox" pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$" placeholder="e.g. user@domain.com.au" required> <!-- RegEx sourced from https://regexr.com/3e48o -->
                 </div>
-            </fieldset>
-
-            <fieldset id="job_related">
-                <legend>Job Related</legend>
                 
-                <!-- Job Reference Number (Select Box) -->
-                <div>
-                    <label for="job_reference_number">Job Reference Number</label><br>
-                    <select name="job_reference_number" id="job_reference_number" required>
-                        <!-- "" is selected by default but cannot be used as a valid selection -->
-                        <option value="" disabled selected>Please Select a Reference Number</option>
-                        <option value="RX7FD">RX7FD &#8209; Cybersecurity Specialist</option>
-                        <option value="SIGC8">SIGC8 &#8209; Software Developer</option>
-                    </select><br><br>
+                <!-- Phone Number (Textbox) -->
+                <div class="form-field">
+                    <label for="phonenumber" class="form-field__label">Phone Number</label>
+                    <input type="text" name="phonenumber" id="phonenumber" class="form-field__textbox" pattern="^[\d ]{8,12}$" placeholder="e.g. 0412345678" required>
                 </div>
 
-                <div>
+            </div>
 
-                    <!-- Required Technical List (Checkboxes) -->
-                    <div>
-                        <div>
-                            <input type="checkbox" name="wireshark" id="wireshark" required>
-                            <label for="wireshark">30&#43; years of experience with Wireshark</label>
-                        </div>
-                        
-                        <div>
-                            <input type="checkbox" name="c_sharp" id="c_sharp">
-                            <label for="c_sharp">25&#43; years of experience with C&#35;</label>
-                        </div>
-                        
-                        <div>
-                            <input type="checkbox" name="jira" id="jira">
-                            <label for="jira">23&#43; years of experience with Jira</label>
-                        </div>
-                        
-                        <div>
-                            <input type="checkbox" name="github" id="github">
-                            <label for="github">Average 5000&#43; GitHub commits per annum</label>
-                        </div>
-                        
-                        <div>
-                            <input type="checkbox" name="script_kiddie" id="script_kiddie">
-                            <label for="script_kiddie">University of Script Kiddies &apos;Certificate of Mass Nuisance&apos;</label>
-                        </div>
-                    </div>
+            <div class="form-group form-group--other">
 
-                    <!-- Other Skills (Textbox) -->
-                    <div>
-                        <label for="other_skills">Other Skills</label><br>
-                        <textarea name="other_skills" id="other_skills"></textarea>
-                    </div>
-                    
+                <!-- Date of Birth (Textbox) -->
+                <div class="form-field">
+                    <label for="dateofbirth" class="form-field__label">Date of Birth</label>
+                    <input type="text" name="dateofbirth" id="dateofbirth" class="form-field__textbox" pattern="^(0[1-9]|[12]\d|3[01])\/(0[1-9]|1[0-2])\/\d{4}$" placeholder="DD/MM/YYYY" required>
                 </div>
-            </fieldset>
+                
+                <!-- Gender (Radio Buttons)-->
+                <div class="form-field form-field--radio">
+                    <fieldset>
+                        <legend>Gender</legend> 
+                        <div class="form-field">
+                            <input type="radio" name="gender" id="male" class="form-field__radio" required>
+                            <label for="male" class="form-field__label">Male</label>
+                        </div>
 
-            <fieldset>
-                <legend>Address</legend>
+                        <div class="form-field">
+                            <input type="radio" name="gender" id="female" class="form-field__radio">
+                            <label for="female" class="form-field__label">Female</label>
+                        </div>
 
+                        <div class="form-field">
+                            <input type="radio" name="gender" id="other" class="form-field__radio">      
+                            <label for="other" class="form-field__label">Other</label>  
+                        </div>
+                    </fieldset>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="form-section form-section--address">
+
+            <!-- Information about why address is collected -->
+            <section class="form-section-introduction">
+                <h3>Address</h3>
+                <p>Tell us where you live&period;</p>
+            </section>
+    
+            <div class="form-group form-group--address">
+    
                 <!-- Street Address (Textbox) -->
-                <div>
-                    <label for="street_address">Street Address</label><br>
-                    <input type="text" name="street_address" id="street_address" pattern="^{1,40}$" required><br><br>
+                <div class="form-field">
+                    <label for="streetaddress" class="form-field__label">Street Address</label>
+                    <input type="text" name="streetaddress" id="streetaddress" class="form-field__textbox" pattern="^{1,40}$" placeholder="e.g. 427-451 Burwood Rd" required>
                 </div>
-
+    
                 <!-- Suburb (Textbox) -->
-                <div>
-                    <label for="suburb">Suburb</label><br>
-                    <input type="text" name="suburb" id="suburb" pattern="^{1,40}$" required><br><br>
+                <div class="form-field">
+                    <label for="suburb" class="form-field__label">Suburb</label>
+                    <input type="text" name="suburb" id="suburb" class="form-field__textbox" pattern="^{1,40}$" placeholder="e.g. Hawthorn" required>
                 </div>
-
+    
                 <!-- State (Select Box) -->
-                <div>
-                    <label for="state">State</label><br>
-                    <select name="state" id="state" required>
+                <div class="form-field">
+                    <label for="state" class="form-field__label">State</label>
+                    <select name="state" id="state" class="form-field__select" required>
                         <option value="">Please Select a State</option>
                         <option value="ACT">ACT</option>
                         <option value="NSW">NSW</option>
@@ -186,18 +153,89 @@
                         <option value="WA">WA</option>
                     </select>
                 </div>
-
+    
                 <!-- Postcode (Textbox) -->
-                <div>
-                    <label for="postcode">Postcode</label><br>
-                    <input type="text" name="postcode" id="postcode" pattern="^{4}$" required>
+                <div class="form-field">
+                    <label for="postcode" class="form-field__label">Postcode</label>
+                    <input type="text" name="postcode" id="postcode" class="form-field__textbox" pattern="^{4}$" placeholder="e.g. 3122" required>
+                </div>
+    
+            </div>
+        </div>
+
+        <div class="form-section form-section--jobrelated">
+
+            <!-- Information about why job-related information is collected -->
+            <section class="form-section-introduction">
+                <h3>Position Information</h3>
+                <p>Select your desired position and express your skills which you have acrewed throughout your years in the industry&excl;</p>
+            </section>
+
+            <div class="form-group form-group--jobreferencenumber">
+
+                <!-- Job Reference Number (Select Box) -->
+                <div class="form-field">
+                    <label for="jobreferencenumber" class="form-field__label">Job Reference Number</label>
+                    <select name="jobreferencenumber" id="jobreferencenumber" required>
+                        <!-- "" is selected by default but cannot be used as a valid selection -->
+                        <option value="" disabled selected>Please Select a Reference Number</option>
+                        <option value="RX7FD">RX7FD &#8209; Cybersecurity Specialist</option>
+                        <option value="SIGC8">SIGC8 &#8209; Software Developer</option>
+                    </select>
                 </div>
 
-            </fieldset>
+            </div>
 
-            <button name="submit" id="submit">Submit</button>
-        </form>
-    </div>
+            <div class="form-group form-group--technicalskills">
+
+                <!-- Required Technical List (Checkboxes) -->
+                <div>
+                    <p>Technical Skills and Experience</p>
+                    <div class="form-field">
+                        <input type="checkbox" name="wireshark" id="wireshark" class="form-field__checkbox" required>
+                        <label for="wireshark" class="form-field__label"><strong>30&#43;</strong> years of experience with <em>Wireshark</em></label>
+                    </div>
+                    
+                    <div class="form-field">
+                        <input type="checkbox" name="csharp" id="csharp" class="form-field__checkbox">
+                        <label for="csharp" class="form-field__label"><strong>25&#43;</strong> years of experience with <em>C&#35;</em></label>
+                    </div>
+                    
+                    <div class="form-field">
+                        <input type="checkbox" name="jira" id="jira" class="form-field__checkbox">
+                        <label for="jira" class="form-field__label"><strong>23&#43;</strong> years of experience with <em>Jira</em></label>
+                    </div>
+                    
+                    <div class="form-field">
+                        <input type="checkbox" name="github" id="github" class="form-field__checkbox">
+                        <label for="github" class="form-field__label">Average <strong>5000&#43;</strong> <em>GitHub commits</em> per annum</label>
+                    </div>
+                    
+                    <div class="form-field">
+                        <input type="checkbox" name="scriptkiddie" id="scriptkiddie" class="form-field__checkbox">
+                        <label for="scriptkiddie" class="form-field__label"><em>University of Script Kiddies</em> <strong>&apos;Certificate of Mass Nuisance&apos;</strong></label>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="form-group form-group--otherskills">
+
+                <!-- Other Skills (Textbox) -->
+                <div class="form-field">
+                    <label for="otherskills" class="form-field__label" id="form-field">Other Skills</label>
+                    <textarea name="otherskills" id="otherskills" class="form-field__textarea" rows="3"></textarea>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="form-input">
+            <button id="submit-button" form="form-container">Submit</button>
+        </div>
+
+    </form>
 
     <footer>
         <hr id="footer_line">
