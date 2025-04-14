@@ -36,6 +36,7 @@ body {
     width: auto;    /*retains image aspect ratio*/
     margin-left: 20px;
     margin-right: 20px;
+    border-radius: 5%;
 }
 
 .menu, .footmenu {
@@ -71,17 +72,17 @@ nav p a:hover {
     text-decoration: none;
 }
 
-#description h2, #description p {
+#description h2, #description p, #landing h2, #landing p {
     text-align: center;
     margin-left: 10%;
     margin-right: 10%;
 }
 
-#description h2 {
+#description h2, #landing h2 {
     font-size: 2em;
 }
 
-#description p {
+#description p, #landing p {
     font-size: 1.5em;
 }
 
@@ -105,6 +106,64 @@ footer p {
 }
 
 /* Home page style elements */
+#home-page {
+    background:url(../images/background_img.png);   /*image by pngtree.com, https://pngtree.com/freebackground/umbrella-monsoon-season-rain-cloud-background_1291113.html*/
+    background-size: cover;
+}
+
+#pages {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#landing img {
+    display: block;
+    margin: 50px auto;
+    border-radius: 5%;
+}
+
+#pages .jobs-item, #pages .apply-item, #pages .about-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 33%;
+    height: 300px;
+    text-align: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+#jobs-img, #apply-img, #about-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter:brightness(0.5);
+    z-index: -1;
+    border-radius: 5%;
+}
+
+.pages-text {
+    font-size: 1.5em;
+    margin: 20px;
+    color: #ffffff;
+}
+
+#pages .jobs-item a, #pages .apply-item a, #pages .about-item a {
+    text-decoration: none;
+}
+
+.jobs-item {
+    margin-left: 5px;
+}
+
+.about-item {
+    margin-right: 5px;
+}
 
 
 /* Jobs page style elements */
@@ -147,12 +206,12 @@ aside .job a:hover {
     text-decoration: none;
 }
 
-aside #apply_link a {
+aside #apply-link a {
     text-decoration: underline;
     color: black;
 }
 
-aside #apply_link a:hover {
+aside #apply-link a:hover {
     text-decoration: none;
 }
 
@@ -174,11 +233,11 @@ aside #apply_link a:hover {
     margin-right: 5%;
 }
 
-.back_to_top a {
+.back-to-top a {
     color: purple;
 }
 
-.back_to_top a:hover {
+.back-to-top a:hover {
     text-decoration: none;
 }
 
@@ -299,36 +358,36 @@ aside #apply_link a:hover {
 }
 
 /*About page CSS styling*/
-#student_ids {
+#student-ids {
     margin-top: 0;      /*brings student ids vertically level with other information list*/
     float: right;
 }
 
-.team_photo_section img {
+.team-photo-section img {
     border: 3px solid midnightblue;
     float: right;
     margin-top: 25px;
 }
 
-#team_basic_info h3, #team_basic_info ul, .team_photo_section img, #member_contribution {
+#team-basic-info h3, #team-basic-info ul, .team-photo-section img, #member-contribution {
     margin-left: 10%;
     margin-right: 10%;
 }
 
-.team_photo_section img {
+.team-photo-section img {
     scale: 125%;
 }
 
-#team_basic_info h3, #member_contribution h3, .interests table caption {
+#team-basic-info h3, #member-contribution h3, .interests table caption {
     font-size: 1.5em;
     font-weight: bold;
 }
 
-#team_basic_info ul, #member_contribution ul, #member_contribution dt {
+#team-basic-info ul, #member-contribution ul, #member-contribution dt {
     font-size: 1.25em;
 }
 
-#team_basic_info ul ul, #member_contribution ul ul {
+#team-basic-info ul ul, #member-contribution ul ul {
     font-size: 1em;
     margin-left: 0;
     margin-right: 0;
@@ -349,7 +408,7 @@ aside #apply_link a:hover {
 }
 
 .interests table tr td {
-    background-color: lightcyan;
+    background-color: #EEEEEE;
     border: 1px solid black;
 }
 
