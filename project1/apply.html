@@ -72,15 +72,16 @@
                 <!-- Email Address (Textbox) -->
                 <div class="form-field">
                     <label for="emailaddress" class="form-field__label">Email Address</label>
-                    <input type="text" name="emailaddress" id="emailaddress" class="form-field__textbox" pattern="^[/w-/.]+@([/w-]+/.)+[/w-]{2,4}$" placeholder="e.g. user@domain.com.au" required> <!-- RegEx sourced from https://regexr.com/3e48o -->
+                    <!-- ChatGPT was used to assist in figuring out how to restrict email input format -->
+                    <!-- Prompt: "regex for an email address input in html" -->                    
+                    <input type="text" name="emailaddress" id="emailaddress" class="form-field__textbox" pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" placeholder="e.g. user@domain.com.au" required>
                 </div>
                 
                 <!-- Phone Number (Textbox) -->
                 <div class="form-field">
                     <label for="phonenumber" class="form-field__label">Phone Number</label>
-                    <input type="text" name="phonenumber" id="phonenumber" class="form-field__textbox" pattern="^[/d ]{8,12}$" placeholder="e.g. 0412345678" required>
+                    <input type="text" name="phonenumber" id="phonenumber" class="form-field__textbox" pattern="^[\d ]{8,12}$" placeholder="e.g. 0412345678" required>
                 </div>
-
             </div>
 
             <div class="form-group form-group--other">
@@ -88,7 +89,7 @@
                 <!-- Date of Birth (Textbox) -->
                 <div class="form-field">
                     <label for="dateofbirth" class="form-field__label">Date of Birth</label>
-                    <input type="text" name="dateofbirth" id="dateofbirth" class="form-field__textbox" pattern="^(0[1-9]|[12]/d|3[01])//(0[1-9]|1[0-2])///d{4}$" placeholder="DD/MM/YYYY" required>
+                    <input type="text" name="dateofbirth" id="dateofbirth" class="form-field__textbox" pattern="^(0[1-9]|[12]\d|3[01])\/(0[1-9]|1[0-2])\/\d{4}$" placeholder="DD/MM/YYYY" required>
                 </div>
                 
                 <!-- Gender (Radio Buttons)-->
@@ -159,7 +160,7 @@
                     <label for="postcode" class="form-field__label">Postcode</label>
 
                     <!-- ChatGPT was used to assist in figuring out how to restrict postcode input to specific values using pattern -->
-                     <!-- Prompt: "How would I set a range restriction from 0200 to 9944 using pattern for an input that accepts 4 digits?" -->
+                    <!-- Prompt: "How would I set a range restriction from 0200 to 9944 using pattern for an input that accepts 4 digits?" -->
                     <input type="text" name="postcode" id="postcode" class="form-field__textbox" pattern="^(0[2-9][0-9]{2}|[1-8][0-9]{3}|9[0-8][0-9]{2}|99[0-3][0-9]|994[0-4])$" maxlength="4" placeholder="e.g. 3122" required>
                 </div>
     
