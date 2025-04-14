@@ -80,6 +80,10 @@ nav p a:hover {
     padding: 10px;
 }
 
+.description--hiring {
+    background-color: transparent;
+}
+
 .description, #landing {
     text-align: center;
 }
