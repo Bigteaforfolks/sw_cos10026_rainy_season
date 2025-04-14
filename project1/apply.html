@@ -72,9 +72,7 @@
                 <!-- Email Address (Textbox) -->
                 <div class="form-field">
                     <label for="emailaddress" class="form-field__label">Email Address</label>
-                    <!-- ChatGPT was used to assist in figuring out how to restrict email input format -->
-                    <!-- Prompt: "regex for an email address input in html" -->                    
-                    <input type="text" name="emailaddress" id="emailaddress" class="form-field__textbox" pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" placeholder="e.g. user@domain.com.au" required>
+                    <input type="text" name="emailaddress" id="emailaddress" class="form-field__textbox" pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$" placeholder="e.g. user@domain.com.au" required> <!-- RegEx sourced from https://regexr.com/3e48o -->
                 </div>
                 
                 <!-- Phone Number (Textbox) -->
