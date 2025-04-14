@@ -5,28 +5,27 @@ created: 2025/04/08
 last modified: 2025/04/11 (Oakley)
 description: universal stylesheet
 */
-
+ 
 
 /* universal style elements */
 * {font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif}
 
 header {
-    display: flex;
-    flex-direction: row;
+    display: flex;  /*flexbox for header*/
     align-items: center;
     background-color: midnightblue;
     color: white;
-    justify-content: space-between;
+    justify-content: space-between;    /*pushes the branding and menu to opposite sides of the header*/
     padding-right: 30px;
     height: 125px;
 }
 
 body {
-    margin: 0;
+    margin: 0;  /*setting all margins to zero allows header and footer flexboxes to reach edges of the page*/
 }
 
 .branding a {
-    display: flex;
+    display: flex;  /*flexbox for logo image and company name*/
     align-items: center;
     text-decoration: none;
     color: white;
@@ -34,27 +33,76 @@ body {
 
 #logo {
     height: 85px;
-    width: auto;
+    width: auto;    /*retains image aspect ratio*/
     margin-left: 20px;
     margin-right: 20px;
 }
 
-.menu {
-    display: inline-block;
+.menu, .footmenu {
+    display: inline-block;  /*arranges menu list into single row and removes dot points*/
 }
 
-.menu a {
+nav ul a {
     font-size: 1.5em;
     text-decoration: none;
     color: white;
+}
+
+.menu {
     margin-left: 15px;
     margin-right: 15px;
 }
 
-.menu :hover {
-    text-decoration: underline;
+.footmenu {
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
+
+nav ul a:hover {
+    text-decoration: underline; 
+}
+
+nav p a {
+    color: white;
+}
+
+nav p a:hover {
+    text-decoration: none;
+}
+
+#description h2, #description p {
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+#description h2 {
+    font-size: 2em;
+}
+
+#description p {
+    font-size: 1.5em;
+}
+
+footer {
+    display: flex;  /*flexbox for footer*/
+    align-items: center;
+    background-color: midnightblue;
+    color: white;
+    justify-content: center;
+    height: 100px;
+    margin-top: 50px;
+}
+
+footer ul {
+    margin-left: -2%;   /*margin to center footer content*/
+}
+
+footer p {
+    text-align: center;
+    margin-left: 1%;  /*margin to center footer content*/
+}
 
 /* Home page style elements */
 
@@ -64,17 +112,11 @@ h1 {
     font: bold 3em 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-#description h2, #description p {
-    text-align: center;
-    margin-left: 10%;
-    margin-right: 10%;
-}
-
-#description h2, .positions h2 {
+.positions h2 {
     font-size: 2em;
 }
 
-#description p, .positions h3, aside h3 {
+.positions h3, aside h3 {
     font-size: 1.5em;
 }
 
@@ -86,15 +128,10 @@ aside {
     float: right;
     width: 25%;
     margin: 25px 25px;
-    padding: 10px 0;
-    border: 4px inset midnightblue;
+    padding: 10px 0;    /*pads top and bottom to make aside content look nicer*/
+    border: 4px solid midnightblue;
     border-radius: 10px;
     box-shadow: 5px 5px 5px gray;
-}
-
-aside ol, aside ul {
-    margin-left: 0;
-    margin-right: 0;
 }
 
 aside p, aside h3 {
@@ -138,13 +175,78 @@ aside #apply_link a:hover {
 }
 
 .back_to_top a {
-    color: black;
+    color: purple;
 }
 
 .back_to_top a:hover {
     text-decoration: none;
 }
 
-.separator, #footer_line {
+.separator {
     margin: 50px 10px;
+}
+
+/*About page CSS styling*/
+#student_ids {
+    margin-top: 0;      /*brings student ids vertically level with other information list*/
+    float: right;
+}
+
+.team_photo_section img {
+    border: 3px solid midnightblue;
+    float: right;
+    margin-top: 25px;
+}
+
+#team_basic_info h3, #team_basic_info ul, .team_photo_section img, #member_contribution {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.team_photo_section img {
+    scale: 125%;
+}
+
+#team_basic_info h3, #member_contribution h3, .interests table caption {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+#team_basic_info ul, #member_contribution ul, #member_contribution dt {
+    font-size: 1.25em;
+}
+
+#team_basic_info ul ul, #member_contribution ul ul {
+    font-size: 1em;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.interests table caption {
+    margin-bottom: 25px;
+}
+
+.interests table {
+    margin: 0 auto;
+    text-align: center;
+    width: 500px;
+}
+
+.interests table tr, .interests table th {
+    border: 2px solid black;
+}
+
+.interests table tr td {
+    background-color: lightcyan;
+    border: 1px solid black;
+}
+
+.interests table tr td:hover{
+    background-color: midnightblue;
+    border: 1px solid white;
+    color: white
+}
+
+.interests table thead, .interests table tbody {
+    font-size: 1.25em;
 }

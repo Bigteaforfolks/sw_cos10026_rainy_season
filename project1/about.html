@@ -32,25 +32,38 @@
         </nav>
     </header>
         
-    <section id="heading">
+    <section id="description">
         <h2>About Us</h2>
     </section>
     
     <!-- team basic information section -->
-    <section id="team_basic_info">
+    <section id="team_basic_info">    
         <h3>Team Basic Information</h3>
-        <ul>
-            <li>Group name: Rainy Season</li>
-            <li>Class time: Friday, 2:30 pm</li>
+        <ul id="student_ids">
             <li>Student IDs
                 <ul>
                     <li>105914449 (Jacob)</li>
                     <li>105928408 (Oakley)</li>
                 </ul>
             </li>
-            <li>Tutor: Razeen Hashmi</li>
+        </ul>
+        <ul>
+            <li>Group name: Rainy Season</li>
+            <li>Class time: Friday, 2:30 pm
+                <ul>
+                    <li>Tutor: Razeen Hashmi</li>
+                </ul>
+            </li>
         </ul>
     </section>
+
+    <hr class="separator">
+
+    <div class="team_photo_section">
+        <img id="team_photo"
+        src="images/team_photo.png"
+        alt="Rainy Season Team">
+    </div>
 
     <!-- Member contribition section -->
     <section id="member_contribution">
@@ -86,22 +99,13 @@
         </dl>
     </section>
 
-    <div class="team_photo_section">
-        <p>Rainy Season Team</p>
-        <img id="team_photo"
-        src="images/team_photo"
-        alt="Rainy Season Team">
-    </div>
+    <hr class="separator"> 
     
     <!-- Member interests section -->
     <div class="interests">
         <table>
             <caption>Interests of Rainy Season team members</caption>
             <thead>
-               <tr>
-                    <th></th>
-                    <th colspan="2" scope="col">Person</th>
-                </tr>
                 <tr>
                     <th></th>
                     <th scope="col">Jacob</th>
@@ -113,7 +117,7 @@
                     <th scope="row">Interest 1</th>
                     
                     <!-- Merged cell for shared interest -->
-                    <td colspan="2">J-rock music</td>
+                    <td colspan="2">Japanese rock music</td>
                 </tr>
                 <tr>
                     <th scope="row">Interest 2</th>
@@ -129,5 +133,19 @@
             </tbody>
         </table>        
     </div>
+
+    <footer>
+        <nav>
+            <ul>
+                <li class="footmenu"><a href="index.html" title="This takes you to the Home page.">Home</a></li>
+                <li class="footmenu"><a href="jobs.html" title="This takes you to the Position Descriptions page.">Jobs</a></li>
+                <li class="footmenu"><a href="apply.html" title="This takes you to the Job Applications page.">Apply</a></li>
+                <li class="footmenu"><a href="about.html" title="This takes you to the About Us page.">About</a></li>
+                <li class="footmenu"><a href="mailto:info@rainyseason.com.au" title="Allows you to contact our email.">Email</a></li>
+            </ul>
+
+            <p>&#169; Swinburne University of Technology  &sol;  <a href="https://rainy-season.atlassian.net/">Rainy Season Jira</a></p>
+        </nav>
+    </footer>
 </body>
 </html>
