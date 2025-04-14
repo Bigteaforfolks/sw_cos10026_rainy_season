@@ -11,21 +11,24 @@ description: universal stylesheet
 * {font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif}
 
 header {
-    display: flex;  /*flexbox for header*/
+    display: flex;  /* flexbox for header */
     align-items: center;
     background-color: midnightblue;
     color: white;
-    justify-content: space-between;    /*pushes the branding and menu to opposite sides of the header*/
+    justify-content: space-between;    /* pushes the branding and menu to opposite sides of the header */
     padding-right: 30px;
     height: 125px;
 }
 
 body {
-    margin: 0;  /*setting all margins to zero allows header and footer flexboxes to reach edges of the page*/
+    margin: 0;  /* setting all margins to zero allows header and footer flexboxes to reach edges of the page */
+    background:url(images/background_img.png);   /* image by pngtree.com, https://pngtree.com/freebackground/umbrella-monsoon-season-rain-cloud-background_1291113.html */
+    background-size: cover;
+    min-width: 1575px;
 }
 
 .branding a {
-    display: flex;  /*flexbox for logo image and company name*/
+    display: flex;  /* flexbox for logo image and company name */
     align-items: center;
     text-decoration: none;
     color: white;
@@ -33,14 +36,14 @@ body {
 
 #logo {
     height: 85px;
-    width: auto;    /*retains image aspect ratio*/
+    width: auto;    /* retains image aspect ratio */
     margin-left: 20px;
     margin-right: 20px;
-    border-radius: 5%;
+    border-radius: 5%;  /* creates rounded effect on image */
 }
 
 .menu, .footmenu {
-    display: inline-block;  /*arranges menu list into single row and removes dot points*/
+    display: inline-block;  /* arranges menu list into single row and removes dot points */
 }
 
 nav ul a {
@@ -87,7 +90,7 @@ nav p a:hover {
 }
 
 footer {
-    display: flex;  /*flexbox for footer*/
+    display: flex;  /* flexbox for footer */
     align-items: center;
     background-color: midnightblue;
     color: white;
@@ -97,54 +100,49 @@ footer {
 }
 
 footer ul {
-    margin-left: -2%;   /*margin to center footer content*/
+    margin-left: -2%;   /* margin to center footer content */
 }
 
 footer p {
     text-align: center;
-    margin-left: 1%;  /*margin to center footer content*/
+    margin-left: 1%;  /* margin to center footer content */
 }
 
 /* Home page style elements */
-#home-page {
-    background:url(../images/background_img.png);   /*image by pngtree.com, https://pngtree.com/freebackground/umbrella-monsoon-season-rain-cloud-background_1291113.html*/
-    background-size: cover;
+#landing img {
+    display: block;
+    margin: 50px auto;
+    border-radius: 5%;  /* creates rounded effect on image */
 }
 
 #pages {
-    display: flex;
+    display: flex;  /* flexbox for page tiles */
     align-items: center;
     justify-content: space-between;
 }
 
-#landing img {
-    display: block;
-    margin: 50px auto;
-    border-radius: 5%;
-}
-
 #pages .jobs-item, #pages .apply-item, #pages .about-item {
-    display: flex;
+    display: flex;  /* flexbox for text, allowing it to be vertically centered */
     flex-direction: column;
     justify-content: center;
-    width: 33%;
+    width: 33.33%;  /* three flexbox tiles, so one-third of the page covered by each */
     height: 300px;
     text-align: center;
     align-items: center;
-    overflow: hidden;
+    overflow: hidden;   /* hides parts of tile background images that go over edge of flexbox */
     position: relative;
 }
 
 #jobs-img, #apply-img, #about-img {
-    position: absolute;
+    position: absolute; /* fixes tile background image position to flexbox */
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
-    filter:brightness(0.5);
+    filter:brightness(0.33);    /* lower tile background image brightness to make text legible */
     z-index: -1;
-    border-radius: 5%;
+    border-radius: 5%;  /* creates rounded effect on image */
 }
 
 .pages-text {
@@ -159,6 +157,11 @@ footer p {
 
 .jobs-item {
     margin-left: 5px;
+}
+
+.apply-item {
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 .about-item {
@@ -180,17 +183,18 @@ h1 {
 }
 
 .superior {
-    font-weight: bold;
+    font-weight: bold;  /* bolds position to which job reports to */
 }
 
 aside {
     float: right;
     width: 25%;
     margin: 25px 25px;
-    padding: 10px 0;    /*pads top and bottom to make aside content look nicer*/
+    padding: 10px 0;    /* pads top and bottom to make aside content look nicer */
     border: 4px solid midnightblue;
     border-radius: 10px;
     box-shadow: 5px 5px 5px gray;
+    background-color: white;
 }
 
 aside p, aside h3 {
@@ -199,7 +203,7 @@ aside p, aside h3 {
 }
 
 aside .job a {
-    color: black;
+    color: midnightblue;
 }
 
 aside .job a:hover {
@@ -208,7 +212,7 @@ aside .job a:hover {
 
 aside #apply-link a {
     text-decoration: underline;
-    color: black;
+    color: midnightblue;
 }
 
 aside #apply-link a:hover {
@@ -234,7 +238,7 @@ aside #apply-link a:hover {
 }
 
 .back-to-top a {
-    color: purple;
+    color: midnightblue;
 }
 
 .back-to-top a:hover {
@@ -246,7 +250,6 @@ aside #apply-link a:hover {
 }
 
 /* Apply page style elements */
-
 .form-introduction h2 {
     font-size: 2em;
     text-align: center;
@@ -265,6 +268,7 @@ aside #apply-link a:hover {
     border: solid 1px;
     padding: 20px;
     margin: 10px 0px;
+    background-color: white;
 }
 
 .form-section-introduction h3 {
@@ -274,7 +278,7 @@ aside #apply-link a:hover {
 
 .form-section-introduction p {
     font-size: 1em;
-    margin-top: 5px 0px;
+    margin-top: 5px;
 }
 
 .form-group {
@@ -288,7 +292,7 @@ aside #apply-link a:hover {
 }
 
 .form-field__label {
-    display: inline-block;
+    display: inline-block;  /* display all labels to the side of inputs */
     width: 20%
 }
 
@@ -334,7 +338,7 @@ aside #apply-link a:hover {
 }
 
 .form-group--otherskills .form-field__label, .form-group--otherskills .form-field__textarea {
-    display: inline-block;
+    display: inline-block;  /* display label and input side by side */
     vertical-align: top;
 }
 
@@ -357,9 +361,9 @@ aside #apply-link a:hover {
     font-size: 2em;
 }
 
-/*About page CSS styling*/
+/* About page CSS styling */
 #student-ids {
-    margin-top: 0;      /*brings student ids vertically level with other information list*/
+    margin-top: 0;      /* brings student ids vertically level with other information list */
     float: right;
 }
 
@@ -408,7 +412,7 @@ aside #apply-link a:hover {
 }
 
 .interests table tr td {
-    background-color: #EEEEEE;
+    background-color: #FFFFFF;
     border: 1px solid black;
 }
 
