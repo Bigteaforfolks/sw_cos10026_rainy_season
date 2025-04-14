@@ -75,17 +75,20 @@ nav p a:hover {
     text-decoration: none;
 }
 
-#description h2, #description p, #landing h2, #landing p {
-    text-align: center;
-    margin-left: 10%;
-    margin-right: 10%;
+.description {
+    background-color: rgb(200, 230, 240, 0.5);
+    padding: 10px;
 }
 
-#description h2, #landing h2 {
+.description, #landing {
+    text-align: center;
+}
+
+.description h2, #landing h2 {
     font-size: 2em;
 }
 
-#description p, #landing p {
+.description p, #landing p {
     font-size: 1.5em;
 }
 
@@ -133,6 +136,11 @@ footer p {
     position: relative;
 }
 
+#pages .jobs-item:hover, #pages .apply-item:hover, #pages .about-item:hover {
+    background-color: rgb(0, 0, 0, 0.4);
+    border-radius: 30px;
+}
+
 #jobs-img, #apply-img, #about-img {
     position: absolute; /* fixes tile background image position to flexbox */
     top: 0;
@@ -142,7 +150,7 @@ footer p {
     object-fit: cover;
     filter:brightness(0.33);    /* lower tile background image brightness to make text legible */
     z-index: -1;
-    border-radius: 5%;  /* creates rounded effect on image */
+    border-radius: 30px;  /* creates rounded effect on image */
 }
 
 .pages-text {
@@ -265,11 +273,6 @@ aside #apply-link a:hover {
 
 .form-section:hover {
     background-color: #FFFFFF;
-}
-
-.form-introduction {
-    background-color: rgb(200, 230, 240, 0.5);
-    padding: 15px;
 }
 
 .form-introduction h2 {
